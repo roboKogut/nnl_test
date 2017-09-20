@@ -1,0 +1,118 @@
+@charset utf-8;
+
+/* fonts */
+@font-face {
+  font-family: 'StellarRegular';
+  src:  url('../fonts/StellarRegular.otf') format('OpenType')
+}
+@font-face {
+  font-family: 'FiraSansLight';
+  src:  url('../fonts/FiraSansLight.otf') format('OpenType')
+}
+
+/* My own normalization */
+html, body, div, nav, ul {
+	margin:0;
+	padding:0;
+  font-size:13pt;
+  color:#1c1f37;
+}
+.wrapper {
+  width:900px;
+  margin:100px auto;
+}
+.navigation {
+  float:left;
+  width:184px;
+  border-radius:5px;
+  box-shadow: 0 0 13px 4px rgba(0,0,0,0.13);
+  margin: 0 25px 0 0;
+  list-style-position: inside;
+  padding:0;
+}
+.navigation__line {
+  padding-left:30px;
+  line-height:26px;
+  margin:13px 5px;
+  margin-left:0;
+  font-family:StellarRegular;
+  cursor:pointer;
+}
+.navigation__line_active {
+  color:#179c94;
+  border-left:4px solid #179c94;
+}
+.navigation__line:hover {
+  color:#179c94;
+}
+.content {
+  float:left;
+  width:623px;
+  border-radius:5px;
+  box-shadow: 0 0 13px 4px rgba(0,0,0,0.13);
+  font-family:StellarRegular;
+  overflow:hidden
+}
+.content__wrapper {
+  overflow:hidden;
+  height:53px;
+}
+.content__wrapper_active {
+  border-left:4px solid #179c94;
+}
+.content__header:hover {
+  background:#ececec
+}
+.content__header {
+  margin:0;
+  line-height:18px;
+  padding:17px 40px;
+  font-size:13pt;
+  font-weight: normal;
+  border-bottom:1px solid #e3e4e7;
+  cursor:pointer;
+}
+.content__pointer {
+  float:right;
+  font-size:16pt;
+  font-weight:bold;
+}
+.content__pointer_rotate {
+  transform: rotate(90deg);
+}
+.content__text {
+  border-top:1px solid #e3e4e7;
+  border-bottom:1px solid #e3e4e7;
+}
+.content__p {
+  margin:0;
+  line-height:30px;
+  padding:17px 40px;
+  font-size:13pt;
+  font-weight: bold;
+  font-family:FiraSansLight;
+}
+.content__footer {
+  margin:0;
+  line-height:18px;
+  padding:17px 40px;
+  font-size:10pt;
+  background:#f2f2f3;
+  color:gray;
+}
+.content__like {
+  margin:0 5px;
+  display:inline-block;
+  vertical-align: middle;
+  width:30px;
+  height:26px;
+  background:url('../png/fingers.png') 31px 0;
+}
+.content__dislike {
+  margin:0 5px;
+  display:inline-block;
+  vertical-align: middle;
+  width:30px;
+  height:26px;
+  background:url('../png/fingers.png') 0 0;
+}
